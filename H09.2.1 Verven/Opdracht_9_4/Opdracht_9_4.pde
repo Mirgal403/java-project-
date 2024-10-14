@@ -3,17 +3,18 @@ void setup(){
 size (500,500);
 
 background(0,150,0);
+
+vierKant(100,100,170,2);
 }
 
 
-void draw(){
+void vierKant(float x ,float y, float lengte, float bredte){
   
-line(350,50,150,50);
 
-line(150,300,150,50);
+line(x,y,x + lengte,y);
 
-line (350,300,150,300);
+line(x,y,y,x + lengte);
 
-line(350,300,350,50);
-
-}
+line(x + lengte ,y + bredte,x  + lengte ,y + lengte );
+  
+line(x + lengte,y + lengte,x + bredte,y + lengte);}
